@@ -3,6 +3,8 @@
 
 -- PRIVATE FUNCTIONS --
 
+local unpack = unpack or table.unpack
+
 local function swapChar(c)
   if c:isUpper() then return c:lower() end
   return c:upper()

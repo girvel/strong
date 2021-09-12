@@ -54,6 +54,14 @@ context('String operators', function()
     test('with two string identifiers', function()
       assert_equal( 'a%s %sz' % {'b', 'c'}, 'ab cz')
     end)
+    test('with lua5.3\'s renaming unpack -> table.unpack', function()
+			local table = {unpack=unpack}
+			unpack = nil
+
+			assert_equal('%s: %s' % {'a', 'b'}, 'a: b')
+
+			unpack = table.unpack
+    end)
   end)
 end)
 
