@@ -36,3 +36,4 @@ The tests are done using [telescope](https://github.com/norman/telescope). Have 
 * [kikito](http://github.com/kikito) provided a much better implementation of `squeeze`.
 * [TsT](http://love2d.org/wiki/User:TsT) helped to improve and fix the `split` function and added the modulo operator.
 * [Roland Yonaba](http://yonaba.github.com/) provided the solution to a problem with a couple special pattern characters.
+* [girvel](https://github.com/girvel) adapted it to lua5.3
